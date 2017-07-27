@@ -68,7 +68,7 @@ Relies on `haskell-mode' stuff."
            (lines (split-string raw-decl "\n"))
            (first-line (car lines)))
 
-      (inferior-haskell-flash-decl decl-beg decl-end elm--get-decl-flash-duration)
+      (inferior-haskell-flash-decl decl-beg decl-end elm--get-decl/flash-duration)
 
       (cl-values
        (if (string-match-p "^[a-z].*:" first-line)
